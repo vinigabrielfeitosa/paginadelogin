@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color:#F8F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: red;
+}
+
+.left-login-image{
+    font-size: 3vw;
+    width: 25vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:  	white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #F8F8FF;
+}
+
+.card-login > h1 {
+    color: red;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #F5F5F5;
+    color:  	gray;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #F5F5F5;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.textfield > label{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: gray;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: red;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px gainsboro;
+}
+/* */
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
+
+  .menu {
+    height: 50px;
+    background-color: black;
+    font-family: Roboto;
+    box-shadow: 0px 0px 100px 5px;
+    display: flex;
+    width: 100%;
+  }
+  
+  .menu h1 {
+    font-size: 18px;
+    padding: 0 0 12.5px 12.5px;
+    color: white;
+    height: 200px;
+    width: 50;
+  }
+  
+  .menu ul {
+    margin: 0 auto;
+  }
+  
+  .menu ul li ul {
+    width: 100%;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+    width: 150px;
+    padding: 0px 10px;
+    line-height: 25px;
+    padding: 0;
+    position: relative;
+  }
+  
+  .menu ul li a {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    padding: 12.5px;
+    display: block;
+    text-decoration: none;
+    color: #666666;
+  }
+  
+  .menu ul ul {
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    transition: all 500ms;
+  }
+  
+  .menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #262626;
+  }
+  
+  .menu ul li:hover ul {
+    opacity: 1;
+  }
+  
+  .menu ul ul a:hover {
+    transition: all 0.4s ease;
+    background-color: #262626;
+    color: white;
+  }
+  
+  .menu a:hover {
+    transition: all 0.4s ease;
+    color: white;
+  }
+  
+  .menu ul ul li {
+    background-color: #1a1a1a;
+  }
+  
+  .menu ul ul a {
+    font-size: 17px;
+  }
+  
+  .menu ul ul li a:hover ul ul ul {
+    visibility: visible;
+
+  }
+
+  html, body {
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+        
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
